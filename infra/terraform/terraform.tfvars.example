@@ -1,0 +1,48 @@
+aws_region   = "us-east-1"
+project_name = "serverless-app"
+environment  = "dev"
+
+# Optional custom domain and DNS zone.
+# domain_name    = "app.example.com"
+# domain_aliases = ["www.app.example.com"]
+# hosted_zone_id = "Z0123456789ABCDEF"
+
+cors_allowed_origins = [
+  "https://example.com"
+]
+
+# Optional SES identity/sender for worker notifications.
+# ses_identity               = "example.com"
+# notifications_sender_email = "noreply@example.com"
+
+# Optional integration IAM grants for Lambda roles (API + worker).
+# Use these when external systems require credentials or delegated roles.
+# lambda_integration_secret_arns = [
+#   "arn:aws:secretsmanager:us-east-1:123456789012:secret:integration/api-key-AbCdEf"
+# ]
+# lambda_integration_parameter_arns = [
+#   "arn:aws:ssm:us-east-1:123456789012:parameter/serverless-app/service/base-url"
+# ]
+# lambda_integration_kms_key_arns = [
+#   "arn:aws:kms:us-east-1:123456789012:key/11111111-2222-3333-4444-555555555555"
+# ]
+# lambda_integration_assume_role_arns = [
+#   "arn:aws:iam::123456789012:role/external-integration-role"
+# ]
+# lambda_additional_policy_arns = [
+#   "arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess"
+# ]
+
+enable_cognito = false
+
+queue_message_retention_seconds = 1209600
+
+api_memory_size    = 256
+api_timeout        = 10
+worker_memory_size = 256
+worker_timeout     = 60
+
+tags = {
+  Owner   = "platform-team"
+  Service = "serverless-template"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "serverless-template-api-lambda",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.918.0",
+    "@aws-sdk/client-sqs": "^3.918.0"
+  }
+}
