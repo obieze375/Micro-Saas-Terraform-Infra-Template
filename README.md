@@ -1,7 +1,7 @@
 # Micro-Saas-Terraform-Infra-Template
 ---
 
-![[ infra.png ]]
+![Alt text for screen readers](infra.png)
 
 ## Intro
 
