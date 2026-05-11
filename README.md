@@ -1,7 +1,7 @@
 # Micro-Saas-Terraform-Infra-Template
 ---
 
-![infra.png]
+![[infra.png]]
 
 ## Intro
 
